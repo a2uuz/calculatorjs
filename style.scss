@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(85, 19, 7);
+  display: grid;
+  place-items: center;
+}
+
+main {
+  width: 20%;
+  margin: 5rem;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  input {
+    height: 15vh;
+    background-color: black;
+    color: white;
+    font-size: 3rem;
+    text-align: right;
+    outline: none;
+    border: none;
+    grid-column: 1 / span 4;
+  }
+  button {
+    cursor: pointer;
+    width: 90px;
+    height: 90px;
+    font-size: larger;
+    &:nth-child(2) {
+      width: auto;
+      grid-column: 1 / span 2;
+    }
+    &:nth-child(17) {
+      width: auto;
+      grid-column: 1 / span 3;
+    }
+  }
+}
+
+.grey {
+  background-color: rgb(238, 237, 237);
+}
+.oran {
+  background-color: orange;
+}
+
+.calc{
+  display: hidden;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
