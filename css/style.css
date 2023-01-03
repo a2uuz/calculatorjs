@@ -5,41 +5,50 @@
 }
 
 body {
+  height: 100vh;
   background-color: rgb(85, 19, 7);
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
-  width: 20%;
-  margin: 5rem;
-  background-color: black;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  width: 50%;
 }
-main input {
-  height: 15vh;
+main .screen {
+  width: 100%;
+  height: 8vh;
+  padding: 1rem 0.5rem;
   background-color: black;
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: right;
   outline: none;
   border: none;
   grid-column: 1/span 4;
 }
-main button {
+main .btns {
+  width: 100%;
+  height: 70vh;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+main .btns button {
+  font-weight: bold;
   cursor: pointer;
-  width: 90px;
-  height: 90px;
   font-size: larger;
 }
-main button:nth-child(2) {
+main .btns button:nth-child(1) {
   width: auto;
   grid-column: 1/span 2;
 }
-main button:nth-child(17) {
+main .btns button:nth-child(16) {
   width: auto;
   grid-column: 1/span 3;
+}
+main .btns button:focus {
+  opacity: 0.7;
 }
 
 .grey {
@@ -48,20 +57,5 @@ main button:nth-child(17) {
 
 .oran {
   background-color: orange;
-}
-
-.calc {
-  display: hidden;
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
