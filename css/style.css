@@ -1,10 +1,16 @@
 * {
   box-sizing: border-box;
-}
-
-body {
   padding: 0;
   margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(119, 48, 0, 0.733);
+  height: 100vh;
 }
 
 .calc {
