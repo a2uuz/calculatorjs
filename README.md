@@ -1,6 +1,6 @@
 # Calculator App
 
-Simple calculator app with basic functionality
+A simple calculator app with basic functionality
 
 ## Screenshot
 
